@@ -1,0 +1,33 @@
+.item {
+    padding: 0 1rem;
+    -ms-flex: 1 0 auto;
+    -moz-box-flex: 1 0 auto;
+    -webkit-box-flex: 1 0 auto;
+    -webkit-flex: 1 0 auto;
+    flex: 1 0 auto;
+    position: relative;
+    box-sizing: border-box;
+    .flex-100 {
+        width: 100%;
+    }
+    .flex-50 {
+        width: 50%;
+        max-width: 50%;
+    }
+    .flex-33 {
+        width: 33.33%;
+        max-width: 33.33%;
+    }
+    .flex-25 {
+        width: 25%;
+        max-width: 25%;
+    }
+    img {
+        width: 100%;
+        max-width: 100%;
+        margin-right: auto;
+        margin-bottom: 1rem;
+        margin-left: auto;
+        display: block;
+    }
+}

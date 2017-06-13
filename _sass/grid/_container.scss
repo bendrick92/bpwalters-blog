@@ -1,0 +1,52 @@
+.container {
+    max-width: 1024px;
+    padding: 2rem 0;
+    margin: 0 auto;
+    position: relative;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;  
+    flex-direction: row;  
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;    
+    flex-wrap: wrap;        
+    -webkit-justify-content: flex-start;   
+    justify-content: flex-start;
+}
+
+@media screen and (max-width: $phone-max-width) {   
+    .container {
+        width: 90%;
+        .item {
+            padding: 0;
+            &.flex-50, &.flex-33 {
+                width: 100%;
+                max-width: 100%;
+            }
+            &.flex-25 {
+                width: 48%;
+                max-width: 48%;
+            }
+        }
+    }
+}
+@media screen and (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    .container {
+        width: 90%;
+        .item {
+            &.flex-25 {
+                width: 48%;
+                max-width: 48%;
+            }
+        }
+    }
+}
+@media screen and (min-width: $desktop-min-width) {
+    .container {
+        width: 75%;
+    }
+}

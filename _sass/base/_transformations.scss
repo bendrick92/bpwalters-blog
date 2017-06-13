@@ -1,0 +1,39 @@
+.is-social-icon {
+    width: 2em;
+    height: 2em;
+    display: inline-block;
+    border-radius: 1em;
+    text-align: center;
+    text-decoration: none;
+    line-height: 2em;
+    background-color: $white;
+    color: $dark-teal;
+}
+ul {
+    &.is-unstyled-list {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+    &.is-inline-list {
+        li {
+            display: inline-block;
+        }
+    }
+}
+
+@media screen and (max-width: $phone-max-width) {
+    .hidden-mobile {
+        display: none !important;
+    }
+}
+@media screen and (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    .hidden-tablet {
+        display: none !important;
+    }
+}
+@media screen and (min-width: $desktop-min-width) {
+    .hidden-desktop {
+        display: none !important;
+    }
+}

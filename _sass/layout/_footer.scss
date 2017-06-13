@@ -1,0 +1,40 @@
+footer {
+    background-color: $dark-teal;
+    color: $white;
+    .container {
+        align-items: center;
+        .item {
+            &:first-child {
+                text-align: left;
+            }
+            &:last-child {
+                text-align: right;
+            }
+            ul {
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                li {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $phone-max-width) {   
+    footer {
+        .container {
+            .item {
+                &:not(:last-child) {
+                    padding-bottom: 1rem;
+                }
+                &:first-child,
+                &:last-child {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
