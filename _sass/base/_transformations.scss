@@ -21,6 +21,12 @@ ul {
         }
     }
 }
+p {
+    &.is-subheading {
+        font-size: .8em;
+        text-transform: uppercase;
+    }
+}
 
 @media screen and (max-width: $phone-max-width) {
     .hidden-mobile {
