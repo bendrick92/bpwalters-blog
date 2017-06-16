@@ -7,4 +7,7 @@ layout: default
 <hr>
 <article>
     {{ page.content }}
+    {% if page.comments != false %}
+        {% include disqus.html %}
+    {% endif %}
 </article>
