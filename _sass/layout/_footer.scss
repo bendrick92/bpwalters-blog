@@ -26,13 +26,21 @@ footer {
     footer {
         .container {
             .item {
+                text-align: center !important;
                 &:not(:last-child) {
-                    padding-bottom: 1rem;
+                    padding-bottom: 1.25em;
                 }
-                &:first-child,
-                &:last-child {
-                    width: 100%;
-                    text-align: center;
+            }
+        }
+    }
+}
+@media screen and (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    footer {
+        .container {
+            .item {
+                text-align: center !important;
+                &:not(:last-child) {
+                    padding-bottom: 1.25em;
                 }
             }
         }

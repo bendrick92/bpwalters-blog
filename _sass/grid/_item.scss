@@ -32,3 +32,33 @@
         display: block;
     }
 }
+
+@media screen and (max-width: $phone-max-width) {   
+    .container {
+        .item {
+            padding: 0;
+            &.flex-50, &.flex-33 {
+                width: 100%;
+                max-width: 100%;
+            }
+            &.flex-25 {
+                width: 48%;
+                max-width: 48%;
+            }
+        }
+    }
+}
+@media screen and (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    .container {
+        .item {
+            &.flex-50, &.flex-33 {
+                width: 100%;
+                max-width: 100%;
+            }
+            &.flex-25 {
+                width: 48%;
+                max-width: 48%;
+            }
+        }
+    }
+}

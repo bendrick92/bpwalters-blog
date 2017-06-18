@@ -20,12 +20,34 @@ ul {
             display: inline-block;
         }
     }
+    &.is-pagination-list {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        li {
+            display: inline-block;
+        }
+    }
 }
 p {
     &.is-subheading {
         font-size: .8em;
         text-transform: uppercase;
     }
+}
+.highlight {
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    background-color: $light-gray;
+}
+.is-left-aligned {
+    text-align: left;
+}
+.is-center-aligned {
+    text-align: center;
+}
+.is-right-aligned {
+    text-align: right;
 }
 
 @media screen and (max-width: $phone-max-width) {

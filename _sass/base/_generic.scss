@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 p, ul, ol {
     margin-top: 0;
     margin-bottom: 1.25rem;
@@ -22,25 +25,40 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid $light-gray;
-    margin: 1.5em 0;
+    margin: 1.25rem 0;
     padding: 0;
 }
 code {
     max-width: 100%;
-    display: inline-block;
-    padding: 5px;
+    padding: .25em .5em;
     border: none;
     border-radius: 0;
     background-color: $light-gray;
     font-family: 'Source Code Pro', serif;
     font-size: .85em;
-    line-height: 1.4em;
-    box-sizing: border-box;
     overflow: auto;
+}
+pre {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    font-size: .8rem;
+    line-height: 1.4;
+    white-space: pre;
+    white-space: pre-wrap;
+    word-break: break-all;
+    code {
+        padding: 0;
+        font-size: 100%;
+        color: inherit;
+        background-color: transparent;
+    }
 }
 body {
 	font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    color: $dark-gray;
 }
 a {
     color: $light-teal;
@@ -59,18 +77,25 @@ h1, h2, h3 {
     font-family: 'Droid Serif', serif;
     color: $teal;
 }
-h1 {
-    font-size: 45px;
+h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    color: $dark-gray;
 }
-h2 {
+h1 {
     font-size: 40px;
 }
-h3 {
-    font-size: 35px;
+h2 {
+    font-size: 36px;
 }
-h4 {
+h3 {
     font-size: 30px;
 }
+h4 {
+    font-size: 25px;
+}
 h5 {
-    font-size: 20px;
+    font-size: 28px;
+}
+h6 {
+    font-size: 16px;
 }

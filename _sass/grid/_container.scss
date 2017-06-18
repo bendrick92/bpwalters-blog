@@ -20,33 +20,16 @@
 
 @media screen and (max-width: $phone-max-width) {   
     .container {
-        width: 90%;
-        .item {
-            padding: 0;
-            &.flex-50, &.flex-33 {
-                width: 100%;
-                max-width: 100%;
-            }
-            &.flex-25 {
-                width: 48%;
-                max-width: 48%;
-            }
-        }
+        width: 95%;
     }
 }
 @media screen and (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
     .container {
-        width: 90%;
-        .item {
-            &.flex-25 {
-                width: 48%;
-                max-width: 48%;
-            }
-        }
+        width: 95%;
     }
 }
 @media screen and (min-width: $desktop-min-width) {
     .container {
-        width: 75%;
+        width: 90%;
     }
 }

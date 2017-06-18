@@ -2,12 +2,14 @@
 layout: default
 ---
 
-<h2>{{ page.title }}</h2>
-<p class="is-subheading">{{ page.date | date: '%B %d, %Y' }}</p>
-<hr>
-<article>
-    {{ page.content }}
-    {% if page.comments != false %}
-        {% include disqus.html %}
-    {% endif %}
-</article>
+<section id="post-content">
+    <h2>{{ page.title }}</h2>
+    <p class="is-subheading">{{ page.date | date: '%B %d, %Y' }}</p>
+    <hr>
+    <article>
+        {{ page.content }}
+        {% if page.comments != false %}
+            <p>{% include disqus.html %}</p>
+        {% endif %}
+    </article>
+</section>

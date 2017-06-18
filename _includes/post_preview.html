@@ -1,0 +1,6 @@
+<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+<p class="is-subheading">{{ post.date | date: '%B %d, %Y' }}</p>
+<hr>
+<article>
+    <p>{{ post.content | strip_html | truncatewords: 25 }}<span>...</span></p>
+</article>

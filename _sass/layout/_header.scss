@@ -119,11 +119,22 @@ header {
 }
 @media screen and (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
     header {
-        nav {
-            display: inline-block;
+        h1 {
+            text-align: center;
         }
-        .hamburger {
-            display: none !important;
+        .container {
+            width: 100%;
+        }
+        nav {
+            text-align: left;
+            ul {
+                li {
+                    width: 100%;
+                    a {
+                        padding: 1.5em;
+                    }
+                }
+            }
         }
     }
 }
