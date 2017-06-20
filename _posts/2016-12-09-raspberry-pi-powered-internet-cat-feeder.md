@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Raspberry Pi-Powered Internet Cat Feeder"
+image: http://i.imgur.com/YS9YQDL.jpg
 ---
 
 A few months ago, I came across a blog post from [David Bryan](http://drstrangelove.net/) on building a [Raspberry Pi-powered Cat Feeder](http://drstrangelove.net/2013/12/raspberry-pi-power-cat-feeder-updates/).  He does a great job highlighting the supplies, tools, and technical expertise needed for the project so I thought I'd give it a try myself.

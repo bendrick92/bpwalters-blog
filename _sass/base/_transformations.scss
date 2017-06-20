@@ -9,6 +9,18 @@
     background-color: $white;
     color: $dark-teal;
 }
+.is-round-icon {
+    width: 2em;
+    height: 2em;
+    display: inline-block;
+    border-radius: 1em;
+    text-align: center;
+    text-decoration: none;
+    line-height: 2em;
+    font-size: .5em;
+    background-color: $teal;
+    color: $white;
+}
 ul {
     &.is-unstyled-list {
         padding: 0;
@@ -49,19 +61,51 @@ p {
 .is-right-aligned {
     text-align: right;
 }
+.is-top-aligned {
+    vertical-align: top;
+}
+.is-middle-aligned {
+    vertical-align: middle;
+}
+.is-bottom-aligned {
+    vertical-align: bottom;
+}
+.is-alternating-section {
+    &:nth-of-type(even) {
+        background-color: $light-gray;
+    }
+}
+.is-full-height {
+    height: 100%;
+}
+.is-full-width {
+    width: 100%;
+}
+.is-cover {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.has-margin-two {
+    margin: 2em;
+}
+.has-background-image {
+    background-size: cover;
+    background-position: center;
+}
 
 @media screen and (max-width: $phone-max-width) {
-    .hidden-mobile {
+    .is-hidden-mobile {
         display: none !important;
     }
 }
 @media screen and (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
-    .hidden-tablet {
+    .is-hidden-tablet {
         display: none !important;
     }
 }
 @media screen and (min-width: $desktop-min-width) {
-    .hidden-desktop {
+    .is-hidden-desktop {
         display: none !important;
     }
 }

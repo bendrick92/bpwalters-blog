@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Raspberry Pi OBD-II Carputer (obdPi)"
+image: http://i.imgur.com/p4mE2g3.jpg
 ---
 
 *PLEASE NOTE: This blog post is meant to be a conceptual overview of the history of this project.  If you are looking for the more technical details on getting your own Raspberry Pi carputer up-and-running, please see the official obdPi documentation [here](https://bendrick92.github.io/obdPi/).*

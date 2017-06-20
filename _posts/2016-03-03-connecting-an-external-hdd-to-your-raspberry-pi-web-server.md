@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Connecting an External HDD to Your Raspberry Pi Web Server"
+image: http://i.imgur.com/XRljVy4.png
 ---
 
 In the previous tutorial, [Setting Up a Raspberry Pi Web Server](http://blog.bpwalters.com/setting-up-a-raspberry-pi-web-server) , we followed the steps to set up your Rasbperry Pi as a web server, able to serve files publicly thanks to Dynamic DNS.

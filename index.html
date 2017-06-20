@@ -5,8 +5,9 @@ pagination:
 ---
 
 <section id="post-list">
-    {% for post in paginator.posts %}	
-        {% include post_preview.html %}			
+    {% for post in paginator.posts | first %}	
+        {% capture post_preview_template %}{% cycle 'post_preview_left.html', 'post_preview_right.html' %}{% endcapture %}
+        {% include {{ post_preview_template }} %}			
     {% endfor %}
 </section>
 {% if paginator.total_pages > 1 %}
