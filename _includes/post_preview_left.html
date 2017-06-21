@@ -1,5 +1,6 @@
 <div class="container">
-    <div class="item flex-50 is-hidden-mobile is-hidden-tablet has-background-image" style="background-image: url('{{ post.image }}');">
+    <div class="item flex-50 is-hidden-mobile is-hidden-tablet has-padding-one">
+        <div class="is-full-width is-full-height has-background-image" style="background-image: url('{{ post.image }}');"></div>
     </div>
     <div class="item flex-50">
         <section id="{{ post.id | remove: '/' }}-preview" class="is-alternating-section">
