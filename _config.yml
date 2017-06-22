@@ -33,7 +33,7 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
-permalink: /:title
+permalink: /:title/
 pagination:
   enabled: true
   per_page: 5

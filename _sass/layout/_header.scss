@@ -43,11 +43,13 @@ header {
                     padding-left: 1em;
                     display: block;
                     text-decoration: none;
-                    color: inherit;
-                }
-                &:hover {
-                    -webkit-transition: all .25s linear;
-                    transition: all .25s linear;
+                    color: $white;
+                    cursor: pointer;
+                    &:hover {
+                        -webkit-transition: all .25s linear;
+                        transition: all .25s linear;
+                        color: $light-teal;
+                    }
                 }
             }
         }
