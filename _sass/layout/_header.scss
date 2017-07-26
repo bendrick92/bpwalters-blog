@@ -1,36 +1,25 @@
 header {
-    -ms-flex: 0;
-    -moz-box-flex: 0;
-    -webkit-box-flex: 0;
-    -webkit-flex: 0;
-    flex: 0;
-    background-color: $teal;
-    color: $white;
+    border-bottom: 1px solid $light-gray;
     .container {
-        padding-top: 0;
-        padding-bottom: 0;
-        align-items: center;
-        -webkit-align-items: center;
-        .item {
-            margin-top: 0;
-            margin-bottom: 0;
-        }
+        padding: 0;
+        @include align-items(center);
     }
     h1 {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        margin-top: 0;
-        margin-bottom: 0;
-        font-family: 'Roboto', serif;
-        letter-spacing: 1px;
-        color: $white;
+        padding: 0;
+        margin: .5em 0;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        a {
+            text-decoration: none;
+            color: $black;
+        }
     }
     nav {
-        width: 100%;
         text-align: right;
-        display: none;
         &.open {
-            display: inline-block;
+            display: block;
         }
         ul {
             padding: 0;
@@ -39,17 +28,14 @@ header {
             li {
                 display: inline-block;
                 a {
-                    padding-right: 1em;
-                    padding-left: 1em;
+                    margin: 0 .9em;
                     display: block;
+                    font-size: 1em;
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: 200;
                     text-decoration: none;
-                    color: $white;
-                    cursor: pointer;
-                    &:hover {
-                        -webkit-transition: all .25s linear;
-                        transition: all .25s linear;
-                        color: $light-teal;
-                    }
+                    text-transform: uppercase;
+                    color: $dark-gray;
                 }
             }
         }
@@ -73,7 +59,7 @@ header {
             position: absolute;
             transform: rotate(0deg);
             transition: .25s ease-in-out;
-            background-color: $white;
+            background-color: $dark-gray;
         }
         span:nth-child(1) {
             top: 0px;
@@ -98,53 +84,27 @@ header {
     }
 }
 
-@media screen and (max-width: $phone-max-width) {
+@include phone-and-tablet {
     header {
-        h1 {
-            text-align: center;
-        }
-        .container {
-            width: 100%;
-        }
         nav {
-            text-align: left;
+            display: none;
             ul {
                 li {
                     width: 100%;
                     a {
-                        padding: 1.5em;
+                        width: 100%;
+                        padding: 0;
+                        margin: 1em 0;
+                        text-align: center;
                     }
                 }
             }
         }
     }
 }
-@media screen and (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+
+@include desktop {
     header {
-        h1 {
-            text-align: center;
-        }
-        .container {
-            width: 100%;
-        }
-        nav {
-            text-align: left;
-            ul {
-                li {
-                    width: 100%;
-                    a {
-                        padding: 1.5em;
-                    }
-                }
-            }
-        }
-    }
-}
-@media screen and (min-width: $desktop-min-width) {
-    header {
-        nav {
-            display: inline-block;
-        }
         .hamburger {
             display: none !important;
         }

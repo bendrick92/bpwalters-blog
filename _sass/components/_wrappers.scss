@@ -1,0 +1,64 @@
+.padding-wrapper {
+    width: 100%;
+    padding: 1em;
+    box-sizing: border-box;
+}
+.background-image-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: -1;
+    div {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        background-size: cover;
+        background-position: center;
+        &.is-opaque {
+            opacity: 0.5;
+        }
+    }
+}
+.inline-image-wrapper {
+    margin: 0 auto 1.25rem;
+    width: 80%;
+    height: 50vw;
+    max-height: 30em;
+    div {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        background-size: cover;
+        background-position: center;
+    }
+}
+.background-link-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    a {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+    }
+}
+
+@include phone-and-tablet {
+    .inline-image-wrapper {
+        width: 100%;
+    }
+}

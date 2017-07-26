@@ -1,14 +1,17 @@
 <div class="container">
-    <div class="item flex-50 is-hidden-mobile is-hidden-tablet has-padding-one">
-        <div class="is-full-width is-full-height has-background-image" style="background-image: url('{{ post.image }}');"></div>
+    <div class="item flex-50 is-hidden-mobile is-hidden-tablet">
+        <a href="{{ post.url }}" class="background-link-wrapper"></a>
+        <div class="background-image-wrapper">
+            <div style="background-image: url('{{ post.image }}');"></div>
+        </div>
     </div>
     <div class="item flex-50">
         <section id="{{ post.id | remove: '/' }}-preview" class="is-alternating-section">
-            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
             <p class="is-subheading">{{ post.date | date: '%B %d, %Y' }}</p>
             <hr>
             <article>
-                <p>{{ post.content | strip_html | truncatewords: 25 }} <a href="{{ post.url }}" class="is-round-icon is-middle-aligned fa fa-sm fa-chevron-right"></a></p>
+                <p>{{ post.content | strip_html | truncatewords: 25 }}</p>
             </article>
         </section>
     </div>

@@ -3,13 +3,20 @@ layout: default
 ---
 
 <section id="post-content">
-    <h2>{{ page.title }}</h2>
-    <p class="is-subheading">{{ page.date | date: '%B %d, %Y' }}</p>
-    <hr>
-    <article>
-        {{ page.content }}
-        {% if page.comments != false %}
-            <p>{% include disqus.html %}</p>
-        {% endif %}
-    </article>
+    <div class="container">
+        <div class="item flex-100">
+            <a href="/" class="is-inline-link"><span class="fa fa-sm fa-chevron-left"></span> Return to Posts</a>
+        </div>
+        <div class="item flex-100">
+            <h2 class="post-title">{{ page.title }}</h2>
+            <p class="is-subheading">{{ page.date | date: '%B %d, %Y' }}</p>
+            <hr>
+            <article>
+                {{ page.content }}
+                {% if page.comments != false %}
+                    <p>{% include disqus.html %}</p>
+                {% endif %}
+            </article>
+        </div>
+    </div>
 </section>

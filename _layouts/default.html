@@ -1,18 +1,11 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">        
-        <title>Ben Walters - Blog</title>
-        <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Roboto|Source+Code+Pro" rel="stylesheet" type="text/css">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/styles.css">
-        {% include google_tag_manager_head.html %}
+        {% include head.html %}
     </head>
     <body>
-        {% include google_tag_manager_body.html %}
-        <header class="teal">
+        {% include body.html %}
+        <header>
             <div class="container">
                 <div class="item flex-50">
                     <h1 class="is-hidden-mobile is-hidden-tablet">Ben Walters</h1>
@@ -26,36 +19,19 @@
                 <div class="item flex-50">
                     <nav>
                         <ul>
-                            <li><a href="http://bpwalters.com">About Me</a></li>
-                            <li><a href="https://blog.bpwalters.com">Blog</a></li>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="https://bpwalters.com/about-me/">About Me</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </header>
-        <main>
-            <div class="container">
-                <div class="item flex-100">
-                    {{ content }}
-                </div>
-            </div>
+        <main>  
+            {{ content }}`
         </main>
         <footer>
-            <div class="container">
-                <div class="item flex-50">
-                    © 2017 Ben Walters
-                </div>
-                <div class="item flex-50">
-					<ul>
-                        <li><a href="mailto:contact@bpwalters.com" class="is-social-icon fa fa-small fa-envelope"></a></li>
-						<li><a href="https://www.facebook.com/ben.walters.9634" class="is-social-icon fa fa-small fa-facebook"></a></li>
-						<li><a href="https://github.com/bendrick92" class="is-social-icon fa fa-small fa-github"></a></li>
-						<li><a href="https://www.linkedin.com/in/ben-walters-89846a66" class="is-social-icon fa fa-small fa-linkedin"></a></li>
-					</ul>
-                </div>
-            </div>
+            {% include footer.html %}
         </footer>
     </body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
-    <script src="{{ site.baseurl }}/assets/js/site.js" type="text/javascript"></script>
+    
 </html>

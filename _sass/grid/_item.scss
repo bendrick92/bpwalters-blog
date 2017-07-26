@@ -1,35 +1,47 @@
 .item {
     padding: 0 1rem;
-    -ms-flex: 1 0 auto;
-    -moz-box-flex: 1 0 auto;
-    -webkit-box-flex: 1 0 auto;
-    -webkit-flex: 1 0 auto;
-    flex: 1 0 auto;
+    @include flex(0, 1, auto);
     position: relative;
     box-sizing: border-box;
+    overflow: hidden;
     &.flex-100 {
         width: 100%;
         max-width: 100%;
+        &.has-gutter {
+            width: 96%;
+            max-width: 96%;
+            margin: 2%;
+        }
     }
     &.flex-50 {
         width: 50%;
         max-width: 50%;
+        &.has-gutter {
+            width: 46%;
+            max-width: 46%;
+            margin: 2%;
+        }
     }
     &.flex-33 {
         width: 33.33%;
         max-width: 33.33%;
+        &.has-gutter {
+            width: 29.33%;
+            max-width: 29.33%;
+            margin: 2%;
+        }
     }
     &.flex-25 {
         width: 25%;
         max-width: 25%;
     }
-    img {
-        width: 100%;
-        max-width: 100%;
-        margin-right: auto;
-        margin-bottom: 1rem;
-        margin-left: auto;
-        display: block;
+    &.has-centered-content {
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(center);
+    }
+    &.is-fill {
+        @include flex(1);
     }
 }
 

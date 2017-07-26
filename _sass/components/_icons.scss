@@ -1,0 +1,24 @@
+.social-icon {
+    width: 2em;
+    height: 2em;
+    margin: .25em;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid $dark-gray;
+    text-align: center;
+    text-decoration: none;
+    line-height: 2em;
+    background-color: $white;
+    color: $dark-gray;
+    cursor: pointer;
+}
+
+.project-icon {
+    margin: .25em;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    line-height: .8em;
+    font-size: 5em;
+    color: $dark-gray;
+}
