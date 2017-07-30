@@ -2,14 +2,11 @@
 layout: default
 ---
 
-<section id="post-content">
+<section id="post-content" class="is-fill">
     <div class="container">
         <div class="item flex-100">
-            <a href="/" class="is-inline-link"><span class="fa fa-sm fa-chevron-left"></span> Return to Posts</a>
-        </div>
-        <div class="item flex-100">
-            <h2 class="post-title">{{ page.title }}</h2>
             <p class="is-subheading">{{ page.date | date: '%B %d, %Y' }}</p>
+            <h2 class="is-post-title">{{ page.title }}</h2>
             <hr>
             <article>
                 {{ page.content }}

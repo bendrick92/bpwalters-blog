@@ -4,14 +4,10 @@ pagination:
     enabled: true
 ---
 
-<section id="post-list">
-    <div class="container">
-        {% for post in paginator.posts %}	
-            <div class="item flex-100">
-                {% include post_preview_left.html %}
-            </div>
-        {% endfor %}
-    </div>
+<section id="post-list" class="is-fill">
+    {% for post in paginator.posts %}	
+        {% include post_preview_left.html %}
+    {% endfor %}
 </section>
 {% if paginator.total_pages > 1 %}
     <section id="pagination" class="is-center-aligned">
